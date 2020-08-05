@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Layout</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 20px;
+}
+
+article {
+  border: 2px solid black;
+  background-color: gray;
+  width: 90%;
+  height: 170px;
+  margin-right: auto;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-family: Helvetica;
+  color: white;
+}
+#p1{
+  border:2px solid black;
+  width:150px;
+  height:35px;
+  margin:0;
+  padding:0;
+  background-color: pink;
+  position: relative;
+  float: right;
+  
+}
+#p2{
+  border:2px solid black;
+  width:150px;
+  height:35px;
+  margin:0;
+  padding:0;
+  background-color: red;
+  position: relative;
+  float: right;
+  
+}
+#p3{
+  border:2px solid black;
+  width:150px;
+  height:35px;
+  margin:0;
+  padding:0;
+  background-color: #fffdd0;
+  position: relative;
+  float: right;
+  
+}
+span{
+  
+  color: black;
+  margin-top: 500px;
+  margin-left: 10px;
+  font-size: 20px;
+
+
+}
+#color{
+  color: white;
+}
+p{
+  margin-top: 50px;
+  color: black;
+  margin-left: 10px;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<h1><center>Our Menu</center></h1>
+
+ <div class="container">
+  <div class="col-lg-4 col-md-6">
+    <article>
+      <p align="middle" id="p1"><span><b>Chicken</b></span></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+    </div>
+ 
+  <div class="col-lg-4 col-md-6">
+    <article>
+      <p align="middle" id="p2"><span id="color"><b>Beef</b></span></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+    </div>
+  <div class="col-lg-4 col-md-6">
+    <article>
+      <p align="middle" id="p3"><span><b>Sushi</b></span></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+    </div>
+  </div>
+  
+
+</body>
+</html>
