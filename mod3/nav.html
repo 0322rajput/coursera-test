@@ -33,36 +33,33 @@ article {
   color: white;
 }
 #p1{
-  border:2px solid black;
   width:150px;
   height:35px;
   margin:0;
-  padding:0;
-  background-color: pink;
+  padding:10px;
+  background-color: gray;
   position: relative;
-  float: right;
+  float: left;
   
 }
 #p2{
-  border:2px solid black;
   width:150px;
   height:35px;
   margin:0;
-  padding:0;
-  background-color: red;
+  padding:10px;
+  background-color: gray;
   position: relative;
-  float: right;
+  float: left;
   
 }
 #p3{
-  border:2px solid black;
   width:150px;
   height:35px;
   margin:0;
-  padding:0;
-  background-color: #fffdd0;
+  padding:10px;
+  background-color: gray;
   position: relative;
-  float: right;
+  float: left;
   
 }
 span{
@@ -75,7 +72,7 @@ span{
 
 }
 #color{
-  color: white;
+  color: black;
 }
 p{
   margin-top: 50px;
@@ -171,6 +168,22 @@ p{
     width: 100%;
   }
 }
+
+
+@media(max-width: 952px){
+  label.logo{
+    font-size:30px;
+    padding-left: 10px;
+  }
+}
+  
+@media(max-width: 858px){
+  .checkbtn{
+    display:block;
+  }
+}
+
+
 nav{
   background-color: gray;
   margin: 0;
@@ -187,6 +200,18 @@ nav{
   font-weight: bold;
  }
 
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
 
 </style>
 </head>
@@ -197,6 +222,11 @@ nav{
   <nav>
     
     <label class="logo">FOOD,LLC</label>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
   </nav>
 
 
